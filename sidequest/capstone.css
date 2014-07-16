@@ -1,127 +1,109 @@
 /* sideQUEST */
 
-body {width:100%;
+body {
+    width:100%;
 	height:100%;
-	background:url(images/bg.png) #000000 repeat-y center;
 	padding:0;
-	margin:0;}
+	margin:0;
+}
 	
-h2 {color:#700003;
+h2 {
+    color:#700003;
 	font-family:Verdana, Geneva, sans-serif;
 	padding:0px;
-	margin:0px;}
+	margin:0px;
+}
 	
-p, .php {color:#333333;
-	text-align:justify;}
+p, .php {
+    color:#333333;
+	text-align:justify;
+}
 
-img {border:none;}
+img {
+    border:none;
+}
 
-a {color:#003C70;
-	text-decoration:none;}
+a {
+    color:#003C70;
+	text-decoration:none;
+}
 	
-a:hover {color:#00050A;}
-	
-.container {width:760px;
-	height:100%;
-	margin:0 auto;}
-	
-.title {width:700px;
-	height:100px;
-	background:#FFFFFF;
-	padding:10px 30px;
-	margin:20px 0px 10px 0px;}
-	
-.title img {float:left;}
+a:hover {
+    color:#00050A;
+}
 
-.title h3 {width:350px;
+ul {
+    padding: 0;
+}
+	
+.container {
+    width: 970px;
+    background-color: #ffffff;
+}
+
+.header h3 {
 	color:#000370;
 	text-align:justify;
-	float:left;
-	padding:0px;
-	margin:10px 0px 0px 24px;}
+}
 	
-.title ul {position:absolute;
-	padding:0px;
-	margin:84px 0px 0px 238px;}
+.header ul {
+    float: right;
+}
 	
-.ie div.title ul {margin-left:-540px;}
-	
-.title li {height:20px;
+.header li {
+    height:20px;
 	width:20px;
 	list-style:none;
 	display:inline-block;
 	float:left;
-	margin:0px 4px;}
+	margin:0px 4px;
+}
 	
-.title li a {height:20px;
+.header li a {
+    height:20px;
 	width:20px;
-	display:block;}
-
-.title li.email {background:url(images/social-media.png) 0px 0px;}
-
-.title li.facebook {background:url(images/social-media.png) -23px 0px;}
-
-.title li.twitter {background:url(images/social-media.png) -46px 0px;}
-	
-.end-letters {width:320px;
-	height:100px;
-	background:url(images/logo/ST.png) right no-repeat;
-	margin-top:-10px;}
-	
-.sword {width:215px;
-	height:50px;
-	background:url(images/logo/sword.png) no-repeat;
-	margin:-40px 0px 0px -750px;}
-	
-.sideque {width:245px;
-	height:80px;
-	background:url(images/logo/sideQUE.png) no-repeat;
-	margin-top:-100px;}
-	
-.logo {position:absolute;}
-
-.ie div.logo {margin-left:-671px;}
-	
-.head {height:100px;
-	width:120px;
-	float:right;
-	margin-top:110px;
-	margin-bottom:-104px;}
-	
-.navbar {width:140px;
-	float:left;
-	margin-right:10px;}
-
-.navbar ul {width:120px;
-	height:100%;
-	padding:0;
-	margin:50px 0 0 0;}
-	
-.navbar li {height:39px;
-	width:140px;
-	background:#FFFFFF;
-	text-align:center;
-	list-style:none;
-	padding:0;
-	margin:0px 0px 20px 0px;}
-	
-.navbar li a {width:120px;
-	font-size:16px;
-	font-weight:bold;
-	text-decoration:none;
 	display:block;
-	padding:10px;}
+}
+
+.header li.email {
+    background:url(core/img/social-media.png) 0px 0px;
+}
+
+.header li.facebook {
+    background:url(core/img/social-media.png) -23px 0px;
+}
+
+.header li.twitter {
+    background:url(core/img/social-media.png) -46px 0px;
+}
+
+.logo {
+    position: relative;
+}
 	
-.navbar li a:visited {color:inherit;}
+.end-letters {
+    width:320px;
+	height:100px;
+	background:url(core/img/logo/ST.png) right no-repeat;
+    position: absolute;
+    top: 0;
+}
 	
-.navbar li:hover {padding:2px;
-	margin:-2px 0px 18px -2px;}
+.sword {
+    width:215px;
+	height:50px;
+	background:url(core/img/logo/sword.png) no-repeat;
+    position: absolute;
+    top: 0;
+}
 	
-.content {width:550px;
-	min-height:650px;
-	background:#FFFFFF;
-	float:right;
-	padding:30px;}
+.sideque {
+    width:245px;
+	height:80px;
+	background:url(core/img/logo/sideQUE.png) no-repeat;
+    position: absolute;
+    top: 10px;
+}
 	
 ul.gdd {text-align:center;
 	list-style:none;

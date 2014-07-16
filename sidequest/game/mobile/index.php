@@ -53,8 +53,8 @@
 			
 		if ($username && $password) {
 					
-			mysql_connect('localhost', 'myrmidon', 'future04') or die('Not Connecting');
-   			mysql_select_db('myrmidon_sidequest') or die ('No Database Selected');
+			mysql_connect('localhost', 'root', '') or die('Not Connecting');
+            mysql_select_db('sidequest') or die ('No Database Selected');
 
 			$query = mysql_query("SELECT * FROM users WHERE username ='$username'");
 			$numrows = mysql_num_rows($query);

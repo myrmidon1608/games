@@ -13,8 +13,8 @@
 	$tpl -> template_dir = $smarty['templates'];
 	$tpl -> compile_dir = $smarty['templates_c'];
 	
-	mysql_connect('localhost', 'myrmidon', 'future04') or die('Not Connecting');
-   	mysql_select_db('myrmidon_sidequest') or die ('No Database Selected');
+	mysql_connect('localhost', 'root', '') or die('Not Connecting');
+   	mysql_select_db('sidequest') or die ('No Database Selected');
 ?>
 
 <!DOCTYPE html>
