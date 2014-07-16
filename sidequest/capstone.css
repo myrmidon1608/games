@@ -1,0 +1,185 @@
+/* sideQUEST */
+
+body {width:100%;
+	height:100%;
+	background:url(images/bg.png) #000000 repeat-y center;
+	padding:0;
+	margin:0;}
+	
+h2 {color:#700003;
+	font-family:Verdana, Geneva, sans-serif;
+	padding:0px;
+	margin:0px;}
+	
+p, .php {color:#333333;
+	text-align:justify;}
+
+img {border:none;}
+
+a {color:#003C70;
+	text-decoration:none;}
+	
+a:hover {color:#00050A;}
+	
+.container {width:760px;
+	height:100%;
+	margin:0 auto;}
+	
+.title {width:700px;
+	height:100px;
+	background:#FFFFFF;
+	padding:10px 30px;
+	margin:20px 0px 10px 0px;}
+	
+.title img {float:left;}
+
+.title h3 {width:350px;
+	color:#000370;
+	text-align:justify;
+	float:left;
+	padding:0px;
+	margin:10px 0px 0px 24px;}
+	
+.title ul {position:absolute;
+	padding:0px;
+	margin:84px 0px 0px 238px;}
+	
+.ie div.title ul {margin-left:-540px;}
+	
+.title li {height:20px;
+	width:20px;
+	list-style:none;
+	display:inline-block;
+	float:left;
+	margin:0px 4px;}
+	
+.title li a {height:20px;
+	width:20px;
+	display:block;}
+
+.title li.email {background:url(images/social-media.png) 0px 0px;}
+
+.title li.facebook {background:url(images/social-media.png) -23px 0px;}
+
+.title li.twitter {background:url(images/social-media.png) -46px 0px;}
+	
+.end-letters {width:320px;
+	height:100px;
+	background:url(images/logo/ST.png) right no-repeat;
+	margin-top:-10px;}
+	
+.sword {width:215px;
+	height:50px;
+	background:url(images/logo/sword.png) no-repeat;
+	margin:-40px 0px 0px -750px;}
+	
+.sideque {width:245px;
+	height:80px;
+	background:url(images/logo/sideQUE.png) no-repeat;
+	margin-top:-100px;}
+	
+.logo {position:absolute;}
+
+.ie div.logo {margin-left:-671px;}
+	
+.head {height:100px;
+	width:120px;
+	float:right;
+	margin-top:110px;
+	margin-bottom:-104px;}
+	
+.navbar {width:140px;
+	float:left;
+	margin-right:10px;}
+
+.navbar ul {width:120px;
+	height:100%;
+	padding:0;
+	margin:50px 0 0 0;}
+	
+.navbar li {height:39px;
+	width:140px;
+	background:#FFFFFF;
+	text-align:center;
+	list-style:none;
+	padding:0;
+	margin:0px 0px 20px 0px;}
+	
+.navbar li a {width:120px;
+	font-size:16px;
+	font-weight:bold;
+	text-decoration:none;
+	display:block;
+	padding:10px;}
+	
+.navbar li a:visited {color:inherit;}
+	
+.navbar li:hover {padding:2px;
+	margin:-2px 0px 18px -2px;}
+	
+.content {width:550px;
+	min-height:650px;
+	background:#FFFFFF;
+	float:right;
+	padding:30px;}
+	
+ul.gdd {text-align:center;
+	list-style:none;
+	padding:0px;
+	margin:0px;}
+	
+.gdd li {font-weight:bold;
+	display:inline-block;
+	cursor:pointer;
+	padding:3px 5px;}
+	
+/* Applications */
+
+p.alert {color:#003C70;}
+
+.login-prompt {width:400px;
+	height:100%;
+	padding:20px;
+	margin:0 auto;}
+	
+.login-suc {width:610px;
+	height:100%;
+	background:url(images/trans-bg.png) repeat-x;
+	position:absolute;}
+	
+.login-suc div {width:300px;
+	background:#FFFFFF;
+	text-align:center;
+	padding:30px;
+	border:1px solid #666666;
+	margin:100px auto 0px auto;
+	outline:10px solid #FFFFFF;}
+	
+table.form {width:400px;}
+
+.form td {padding:5px 0px;}
+
+.form input {margin:5px 0px;}
+
+.tasklist {width:250px;
+	min-height:300px;
+	padding:10px;
+	margin:50px auto;
+	border:1px solid #000000;}
+	
+.tasklist th, .tasklist td {padding:10px 0px 10px 10px;}
+
+td.taskname {background:url(login/apps/images/start-screen/active.png) no-repeat;
+	background-position:0px 16px;}
+	
+/* Accordion Menu */
+
+.expand h4 {font-style:italic;
+	padding:5px 0px;
+	margin:0px;}
+		
+.expand h4:hover {cursor:pointer;}
+
+.expand div, .expand.hide h4 {border-bottom:1px solid #000370;}
+		
+.expand.hide div {display:none;}
