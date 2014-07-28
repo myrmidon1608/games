@@ -1,5 +1,8 @@
 <?php
 
+    session_start();
+    include('functions.php');
+
     $connect = array (
         'host' => 'localhost', //'myrmidon16.db',
         'database' => 'sidequest', //'main',

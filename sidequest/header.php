@@ -26,7 +26,4 @@
             </div>
         </div>
         <div class="content">
-        <?php if ($_SESSION['username']) {
-            echo "Welcome, ".strtoupper($_SESSION['nickname'])."!";
-            echo "<div style='float:right;'><a href='login/logout.php'>LOGOUT</a></div><br /><br />";
-        }
+        

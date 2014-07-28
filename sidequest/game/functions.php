@@ -2,67 +2,6 @@
 		
 	$beginx = 14;
 	$beginy = 30;
-
-	function sidequest_data() {
-		mysql_connect('localhost', 'root', '') or die('Not Connecting');
-   		mysql_select_db('sidequest') or die ('No Database Selected');
-	}
-
-	function login_form($barsize) {
-		echo "<div class='login-prompt'><fieldset><legend>Please Login to Access Applications:</legend>";
-        echo "<form method='post' action='index.php'>";
-        echo "<table class='form'>
-				<tr>
-					<td style='width:200px;'><label>Username:</label></td>
-                	<td><input type='text' name='username' size='" .$barsize. "' /></td>
-				</tr>
-				<tr>
-                	<td><label>Password:</label></td>
-                	<td><input type='password' name='password' size='" .$barsize. "' /></td>
-				</tr>
-				<tr>
-                	<td colspan='2'><input type='submit' name='login' value='Login' />
-				</tr>
-			  </table>";
-        echo "</form>";
-        echo "</fieldset></div>";
-	}
-        
-    function register_form($barsize, $sticky_user, $sticky_nick, $sticky_email) {
-		echo "<div class='login-prompt'><fieldset><legend>Resistration Form</legend>";
-        echo "<form method='post' action='index.php'>";
-        echo "<table  class='form'>
-				<tr>
-					<td style='width:200px;'><label>Username: *</label></td>
-                	<td><input type='text' name='rusername' size='" .$barsize. "' value='" .$sticky_user. "' /></td>
-				</tr>
-				<tr>
-					<td style='width:200px;'><label>Nickname: **</label></td>
-                	<td><input type='text' name='rnickname' size='" .$barsize. "' value='" .$sticky_nick. "' /></td>
-					
-				</tr>
-                <tr>
-					<td><label>Email:</label></td>
-                	<td><input type='text' name='email' size='" .$barsize. "' value='" .$sticky_email. "' /></td>
-				</tr>
-                <tr>
-					<td><label>Password: ***</label></td>
-                	<td><input type='password' name='rpassword' size='" .$barsize. "' /></td>
-                </tr>
-				<tr>
-					<td><label>Repeat Password:</label></td>
-                	<td><input type='password' name='repeat_password' size='" .$barsize. "' /></td>
-				</tr>
-				<tr>
-                	<td colspan='2'><input type='submit' name='register' value='Register' />
-				</tr>
-			  </table>";
-        echo "</form>";
-        echo "</fieldset></div>";
-		echo "<p>* Your username must be less than 10 characters.</p>";
-		echo "<p>** Your nickname will be used as the main name for gameplay. It must be 4 characters.</p>";
-		echo "<p>*** Your password must be between 6 and 25 characters.</p>";
-	}
 	
 	function loading() {
 		echo "<div class='show-load'>";
