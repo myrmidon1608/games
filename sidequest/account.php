@@ -21,9 +21,8 @@
             <div id="item-box" class="shop-box" style="display:none;">
                 <ul>
                 	<?php 
-						session_start();
 						
-						$uid = $_SESSION['user_id'];
+						/*$uid = $_SESSION['user_id'];
 						
 						$q = "SELECT item_id FROM user_items WHERE user_id = " .$uid. " ORDER BY item_id ASC";
 						$ui = mysql_query($q);							
@@ -33,7 +32,7 @@
 							$item = mysql_fetch_array($q);
 							$name = strtoupper($item['name']);
 							echo "<li>{$name}</li>";
-						}
+						}*/
 					?>
                 </ul>
         	</div>
@@ -75,16 +74,6 @@
                     </div>
                 </div>
             </div>
-        </div>   
-    
-    	<div class="char">
-        <img id="ini" src="game/images/char-stand.png" style="display:none;" alt="|-|" />
-        <img id="walk" src="game/images/char-walk.gif" style="display:none;" alt="|-|" />
-        </div>
-        
-        <div class="navigation">
-            <div id="arrows"><?php arrow_nav("move"); ?></div>
-            <div class="trans" style="display:none;"></div>
         </div>
         
         <div id="battle" class="battle" style="display:none;">
@@ -113,18 +102,36 @@
         	<div id="cont" style="position:absolute; left:258px; top:327px; display:none;">
         		<a href="index.php"><img src="game/images/screen/continue.png" alt="CONTINUE" /></a>
             </div>
-        	<?php include('game/toggle-enemy.php'); ?>
+        	<?php //include("game/toggle-enemy.php"); ?>
         </div>
+        
+        <!-- Screens -->
+        <div class="show-load">
+            <img src='game/images/loading.gif' alt='LOADING...' />
+        </div>
+
+        <?php include ('view/partials/start-screen.html'); ?>
         
         <div class="data">
-            <span id="coord" style="float:right;"></span>
-            <span id="start-ini" style="float:left;" onclick="pause();"></span>
+            <span id="coord" class="right"></span>
+            <span id="start-ini" class="left" onclick="pause();"></span>
         </div>
-        
-        <?php include ('game/maps/map-state.php'); ?>
+
+        <!-- Character Sprite -->
+        <div id="character" class="char">
+            <img src="game/images/char-walk.gif" class="hide" alt="|-|" />
+        </div>
+
+        <!-- Main Game Navigation -->
+        <div class="navigation">
+            <?php include("view/partials/arrow-nav.html"); ?>
+            <div class="trans hide"></div>
+        </div>
+
+        <?php include ("game/overworld.php"); ?>
 
         <script type="text/javascript">
-  		var hideDiv = function(){
+  		/*var hideDiv = function(){
 			$('.show-load').css('display', 'none');
 			update();
 			
@@ -247,5 +254,5 @@
 			var y = my;
 			$('.trans').fadeIn(100).delay(100).fadeOut(100);
 			move(x,y,1);
-		}		
+		}*/	
         </script>

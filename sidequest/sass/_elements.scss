@@ -1,0 +1,101 @@
+ /******************************************************************************
+  * GAME ELEMENT CLASSES (ARROW BUTTONS, ETC)
+  ******************************************************************************/
+ 
+.map {
+    width:361px;
+	height:361px;
+    overflow: hidden;
+	position:relative;
+	margin:60px auto;
+	border:5px solid #FFFFFF;
+	outline:1px solid #000000;
+    
+    .char {
+        position: absolute;
+        left: 156px;
+        top: 139px;
+        z-index: 20;
+    }
+}
+ 
+.navigation {
+    position:relative;
+	z-index:50;
+    
+    .arrows {
+        
+        div {
+            position: absolute;
+            cursor: pointer;
+        }
+    
+        .aTop {
+            top: 21px;
+            left: 135px;
+        }
+
+        .aRight {
+            top: 135px;
+            left: 294px;
+        }
+
+        .aBottom {
+            top: 294px;
+            left: 135px;
+        }
+
+        .aLeft {
+            top: 135px;
+            left: 21px;
+        }
+    }
+    
+    .trans {
+        width:100%;
+        height:100%;
+        background:#000000;
+        position:relative;
+        z-index:60;
+    }
+}
+
+.start-screen {
+    width: 100%;
+	height: 100%;
+    background:#FFFFFF;
+	position: relative;
+    z-index:80;
+    padding-top:16px;
+
+    div {
+        text-align:center;
+        display:none;
+        padding-left:10px;
+        margin:40px auto;
+    }
+}
+
+.overworld {
+    width: 14043px;
+	height: 11232px;
+    background-image: url('../../game/images/overworld/map-whole.png');
+    background-size: cover;
+	position: absolute;
+	z-index: 10;
+	top: 0px;
+	left: 0px;
+    margin: 0;
+    
+    /*div {
+       height: 351px;
+         
+        div {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+            float: left;
+        }
+    }*/
+}

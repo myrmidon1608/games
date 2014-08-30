@@ -4,25 +4,12 @@ div:focus {outline:none;}
 
 a {border:none;}
 
-.map {width:351px;
-	height:351px;
+
 	
-	position:relative;
-	margin:20px auto;
-	border:5px solid #FFFFFF;
-	outline:1px solid #000000;}
-	
-.show-load, #start-screen, .pause-screen, .battle, .echo, .night, .trans {width:351px;
+.show-load, .pause-screen, .battle, .echo, .night, .trans {width:351px;
 	height:351px;
 	position:relative;}
-	
-#task-start {width:351px;
-	height:351px;
-	position:absolute;
-	left:0px;
-	top:0px;
-	z-index:90;
-	padding-top:276px;}
+
 	
 .show-load {background:#CCCCCC;
 	z-index:100;}
@@ -105,10 +92,7 @@ span.greet {display:block;
 .shop-box li:hover {background:url(images/screen/active.png) no-repeat;
 	background-position:0px 6px;}
 
-.char {position:absolute;
-	left:156px;
-	top:139px;
-	z-index:20;}
+
 	
 .exit-button {position:absolute;
 	left:3px;
@@ -123,26 +107,9 @@ span.greet {display:block;
 	top:135px;
 	cursor:pointer;}
 	
-.overworld {width:100%;
-	height:100%;
-	position:absolute;
-	z-index:10;
-	top:0px;
-	left:0px;}
+
 	
-.overworld div {height:351px;}
-	
-.overworld div div, .town1, .town1build, .town2, .town2build, .town3, .town3build, .shrine-temple {width:351px;
-	height:351px;
-	display:block;
-	position:relative;
-	float:left;}
-	
-.navigation {position:relative;
-	z-index:50;}
-	
-.navigation div div, .town1 div, .town2 div, .town3 div, #shrine-enter {position:absolute;
-	cursor:pointer;}
+
 	
 .town1, .town1build, .town3, .town3build {background:url(images/buildings/town1.png);}
 

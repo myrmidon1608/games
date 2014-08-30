@@ -5,30 +5,38 @@
     $title = "sideQUEST";
     $desc = "";
     
-	include("header.php");
+	include("view/includes/header.php");
 
     $user = get("username", "SESSION");
     $nick = get("nickname", "SESSION");
 
-    if ($user) {
-        echo "Welcome, ".strtoupper($_SESSION['nickname'])."!";
-        echo "<div style='float:right;'><a href='logout.php'>LOGOUT</a></div><br /><br />";
+    if ($user) { ?>
+        <div class="left">
+            <p>Welcome, <?php echo strtoupper($_SESSION['nickname']) ?>!</p>
+        </div>
+        <div class="right">
+            <a href="view/includes/logout.php" class="right">LOGOUT</a>
+        </div>
 
-		echo"<div class='map'>";
-		include ('account.php');
-		echo"</div>";
+		<div class="map">
+            <?php include ('account.php'); ?>
+		</div>
 		
-		echo"<div style='text-align:right; margin-top:50px;'>
-		<h3><a href='game/mobile/index.php' target='_blank'>DOWNLOAD THE MOBILE APP!</a></h3>
-		</div>";
+		<div class="right">
+            <h3><a href="game/mobile/index.php" target="_blank">DOWNLOAD THE MOBILE APP!</a></h3>
+		</div>
+    
+    <?php
+    
     } else {
-		include ("login.php");
+		include ("view/includes/login.php"); ?>
 		
-		echo"<p>If not a registered user, please register now. It's absolutely free!</p>";
+		<p>If not a registered user, please register now. It's absolutely free!</p>
 		
-		include ('register.php');
+    <?php
+        include ('view/includes/register.php');
 	}
 		
-	include("footer.php");
+	include("view/includes/footer.php");
 	
 ?>

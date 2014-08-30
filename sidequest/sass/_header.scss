@@ -1,0 +1,71 @@
+ /******************************************************************************
+  * HEADER CLASSES
+  ******************************************************************************/
+ 
+ .header {
+     
+    h3 {
+        color:#000370;
+        text-align:justify;
+    }
+
+    ul {
+        float: right;
+    }
+
+    li {
+        height:20px;
+        width:20px;
+        list-style:none;
+        display:inline-block;
+        float:left;
+        margin:0px 4px;
+    
+        a {
+            height:20px;
+            width:20px;
+            display:block;
+        }
+
+        &.email {
+            background:url('../img/social-media.png') 0px 0px;
+        }
+
+        &.facebook {
+            background:url('../img/social-media.png') -23px 0px;
+        }
+
+        &.twitter {
+            background:url('../img/social-media.png') -46px 0px;
+        }
+    }
+
+    .logo {
+        position: relative;
+    	
+        .end-letters {
+            width:320px;
+            height:100px;
+            background:url('../img/logo/ST.png') right no-repeat;
+            position: absolute;
+            top: 0;
+        }
+
+        .sword {
+            width:215px;
+            height:50px;
+            background:url('../img/logo/sword.png') no-repeat;
+            position: absolute;
+            top: 0;
+            left: -30%;
+        }
+
+        .sideque {
+            width:245px;
+            height:80px;
+            background:url('../img/logo/sideQUE.png') no-repeat;
+            position: absolute;
+            top: 10px;
+        }
+    }
+ }

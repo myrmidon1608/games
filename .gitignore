@@ -36,3 +36,6 @@ Icon
 .Spotlight-V100
 .Trashes
 /nbproject/private/
+# SideQUEST
+sidequest/core/tmp/
+sidequest/core/css/main.css

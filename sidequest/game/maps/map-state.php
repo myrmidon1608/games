@@ -1,7 +1,5 @@
 <?php
 
-	loading();
-
 	 switch($_GET['state']) {
 				
 				case "shr01":
@@ -59,10 +57,7 @@
 					break;
 					
 				default:
-					include ('game/start-screen.php');
-					echo "<div id='worldmap'>";
-                    include ('game/overworld.php');
-                    echo "</div>";
+					
 					break;
             }
 

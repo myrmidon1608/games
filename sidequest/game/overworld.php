@@ -1,5 +1,6 @@
         
-    	<div class="navigation">
+    <div id="worldmap">
+    	<!--<div class="navigation">
             <div id="enter">
                 <div id="entertown1" style="width:78px; height:39px; left:234px; top:78px;" onclick="enter();"></div>
                 <div id="entertown2" style="width:78px; height:39px; left:39px; top:234px;" onclick="enter();"></div>
@@ -19,7 +20,7 @@
             <div id="exit" style="display:none;">
             	<div class="exit-button" onclick="exit('town');"><img src="game/images/navigation/arrow-exit.png" alt="<" /></div>
             </div>
-        </div>
+        </div>-->
         
         <span class="datax" style="display:none;" onclick="exit('building');">X</span>
         <div id="town1name">
@@ -31,10 +32,10 @@
                     <div style="background:url(game/images/navigation/enter-right.png); left:195px; top:234px;" onclick="enter('temple');"></div>
                 </div>
                 <div id="house1" class="town1build" style="display:none;">
-					<?php town_building('nochar', 'THE DOOR IS LOCKED. KNOCK ON THE DOOR?', 'NO ONE ANSWERED.', '"house"', '"building"'); ?>
+					<?php //town_building('nochar', 'THE DOOR IS LOCKED. KNOCK ON THE DOOR?', 'NO ONE ANSWERED.', '"house"', '"building"'); ?>
                 </div>
                 <div id="shop1" class="town1build" style="display:none;">
-					<?php town_building('shopkeep', 'WELCOME! WOULD YOU LIKE TO TRADE?', 'TAKE A LOOK AT MY WARES.', '"shop"',  '"building"'); ?>
+					<?php //town_building('shopkeep', 'WELCOME! WOULD YOU LIKE TO TRADE?', 'TAKE A LOOK AT MY WARES.', '"shop"',  '"building"'); ?>
                     <div class="shop-box" style="display:none;">
                     	<ul>
                         	<li id="pn1"></li>
@@ -45,12 +46,12 @@
                     </div>
                 </div>
                 <div id="inn1" class="town1build" style="display:none;">
-					<?php town_building('innkeep', 'WELCOME! WOULD YOU LIKE TO REST?', 'HAVE A GOOD NIGHT.', '"inn"', '"building"'); ?>
+					<?php //town_building('innkeep', 'WELCOME! WOULD YOU LIKE TO REST?', 'HAVE A GOOD NIGHT.', '"inn"', '"building"'); ?>
                     <div class="night" style="display:none;"></div>
                 </div>
                 <div id="temple1" class="town1build" style="display:none;">
                  	<img src="game/images/characters/priest-pray.png" class="pray-char" style="z-index:50; display:none;" />
-					<?php town_building('priest', 'GOD IS ALWAYS WITH US. LET US PRAY.', '...',  '"temple"', '"building"'); ?>
+					<?php //town_building('priest', 'GOD IS ALWAYS WITH US. LET US PRAY.', '...',  '"temple"', '"building"'); ?>
                     <div class="prayer" style="display:none;">
                     	<span>AMEN.</span>
                     </div>
@@ -66,10 +67,10 @@
                     <div style="background:url(game/images/navigation/enter-right.png); left:195px; top:234px;" onclick="enter('temple');"></div>
                 </div>
                 <div id="house2" class="town2build" style="display:none;">
-					<?php town_building('nochar', 'THE DOOR IS LOCKED. KNOCK ON THE DOOR?', 'NO ONE ANSWERED.', '"house"', '"building"'); ?>
+					<?php //town_building('nochar', 'THE DOOR IS LOCKED. KNOCK ON THE DOOR?', 'NO ONE ANSWERED.', '"house"', '"building"'); ?>
                 </div>
                 <div id="shop2" class="town2build" style="display:none;">
-					<?php town_building('shopkeep', 'WELCOME! WOULD YOU LIKE TO TRADE?', 'TAKE A LOOK AT MY WARES.', '"shop"',  '"building"'); ?>
+					<?php //town_building('shopkeep', 'WELCOME! WOULD YOU LIKE TO TRADE?', 'TAKE A LOOK AT MY WARES.', '"shop"',  '"building"'); ?>
                     <div class="shop-box" style="display:none;">
                     	<ul>
                         	<li id="pn2"></li>
@@ -80,12 +81,12 @@
                     </div>
                 </div>
                 <div id="inn2" class="town2build" style="display:none;">
-					<?php town_building('innkeep', 'WELCOME! WOULD YOU LIKE TO REST?', 'HAVE A GOOD NIGHT.', '"inn"', '"building"'); ?>
+					<?php //town_building('innkeep', 'WELCOME! WOULD YOU LIKE TO REST?', 'HAVE A GOOD NIGHT.', '"inn"', '"building"'); ?>
                     <div class="night" style="display:none;"></div>
                 </div>
                 <div id="temple2" class="town2build" style="display:none;">
                 	<img src="game/images/characters/priest-pray.png" class="pray-char" style="z-index:50; display:none;" />
-					<?php town_building('priest', 'GOD IS ALWAYS WITH US. LET US PRAY.', '...',  '"temple"', '"building"'); ?>
+					<?php //town_building('priest', 'GOD IS ALWAYS WITH US. LET US PRAY.', '...',  '"temple"', '"building"'); ?>
                     <div class="prayer" style="display:none;">
                     	<span>AMEN.</span>
                     </div>
@@ -101,10 +102,10 @@
                     <div style="background:url(game/images/navigation/enter-right.png); left:195px; top:234px;" onclick="enter('temple');"></div>
                 </div>
                 <div id="house3" class="town3build" style="display:none;">
-					<?php town_building('nochar', 'THE DOOR IS LOCKED. KNOCK ON THE DOOR?', 'NO ONE ANSWERED.', '"house"', '"building"'); ?>
+					<?php //town_building('nochar', 'THE DOOR IS LOCKED. KNOCK ON THE DOOR?', 'NO ONE ANSWERED.', '"house"', '"building"'); ?>
                 </div>
                 <div id="shop3" class="town3build" style="display:none;">
-					<?php town_building('shopkeep', 'WELCOME! WOULD YOU LIKE TO TRADE?', 'TAKE A LOOK AT MY WARES.', '"shop"',  '"building"'); ?>
+					<?php //town_building('shopkeep', 'WELCOME! WOULD YOU LIKE TO TRADE?', 'TAKE A LOOK AT MY WARES.', '"shop"',  '"building"'); ?>
                     <div class="shop-box" style="display:none;">
                     	<ul>
                         	<li id="pn3"></li>
@@ -115,23 +116,26 @@
                     </div>
                 </div>
                 <div id="inn3" class="town3build" style="display:none;">
-					<?php town_building('innkeep', 'WELCOME! WOULD YOU LIKE TO REST?', 'HAVE A GOOD NIGHT.', '"inn"', '"building"'); ?>
+					<?php //town_building('innkeep', 'WELCOME! WOULD YOU LIKE TO REST?', 'HAVE A GOOD NIGHT.', '"inn"', '"building"'); ?>
                     <div class="night" style="display:none;"></div>
                 </div>
                 <div id="temple3" class="town3build" style="display:none;">
                 	<img src="game/images/characters/priest-pray.png" class="pray-char" style="z-index:50; display:none;" />
-					<?php town_building('priest', 'GOD IS ALWAYS WITH US. LET US PRAY.', '...',  '"temple"', '"building"'); ?>
+					<?php //town_building('priest', 'GOD IS ALWAYS WITH US. LET US PRAY.', '...',  '"temple"', '"building"'); ?>
                     <div class="prayer" style="display:none;">
                     	<span>AMEN.</span>
                     </div>
                 </div>      
             </div>
         </div>
-    	<div id="overworld" class="overworld" style="width:14040px; margin:0;"><?php include ('game/maps/world-map.php') ?></div>
+    	<div id="overworld" class="overworld">
+            <?php //include ('game/maps/world-map.php') ?>
+        </div>
+    </div>
         
 <script>
 
-	var t1x = 14;
+	/*var t1x = 14;
 	var t1y = 30;
 	var t2x = 15;
 	var t2y = 21;
@@ -151,13 +155,7 @@
 	var sh6x = 30;
 	var sh6y = 12;
 	
-</script>
-<script type="text/javascript" src="game/insert-tasks.js"></script>
-<script>
 	
-	function startGame() {
-		$("#start-screen").css('display', 'none');
-	}
 	
 	function shopItem(town) {
 			var t = town;
@@ -439,171 +437,6 @@
 				screenExit('start');
 			}
 		});
-	}
-	
-	function move(mvx, mvy, nobattle) {
-		var x = mvx;
-		var y = mvy;
-		var nb = nobattle;
-
-		var world = document.getElementById('overworld');
-		xpos = parseInt(world.style.marginLeft);
-		ypos = parseInt(world.style.marginTop);
-		boundary();
-		
-		if (nb !== 1) {
-			battle(500000000, 'world');
-		}
-		else {}
-		
-		function boundary() {
-			
-			$.ajax({
-				type: "POST",
-				url: "php/tilecheck.php",
-				dataType: "json",
-				data:{x:charx + x, y:chary + y},
-				success: function(data) {
-					var id = data.id;
-					charx += x;
-					chary += y;
-					
-					var left = data.ow_lefttile;
-					var right = data.ow_righttile;
-					var top = data.ow_toptile;
-					var bot = data.ow_bottomtile;
-					var tleft = data.task_lefttile;
-					var tright = data.task_righttile;
-					var ttop = data.task_toptile;
-					var tbot = data.task_bottomtile;
-
-					var xypos = document.getElementById("coord");
-					xypos.innerText = charx + ", " + chary;
-					
-					$("#exit").css('display', 'none');
-					
-					if(left == 1){
-						$("#aleft").css('display', 'none');
-					}
-					else {
-						$("#aleft").css('display', '');
-					}
-					
-					if(right == 1 || id == 1){
-						$("#aright").css('display', 'none');
-					}
-					else {
-						$("#aright").css('display', '');
-					}
-					
-					if(top == 1 || id == 1){
-						$("#atop").css('display', 'none');
-					}
-					else {
-						$("#atop").css('display', '');
-					}
-					
-					if(bot == 1){
-						$("#abottom").css('display', 'none');
-					}
-					else {
-						$("#abottom").css('display', '');
-					}
-					
-					var p = new Date();
-					$("#walk").fadeIn(0).attr("src", "game/images/char-walk.gif?" + p.getTime(), function () {
-						$('#ini').fadeOut(0).delay(800).fadeIn(0);
-					});
-					world.style.marginTop = -chary * 351 +"px";
-					world.style.marginLeft = -charx * 351 +"px";
-					
-					if (charx == t1x && chary == t1y) {
-						$("#entertown1").css('display', '');
-					}
-					else {
-						$("#entertown1").css('display', 'none');
-					}
-					
-					if (charx == t2x && chary == t2y) {
-						$("#entertown2").css('display', '');
-					}
-					else {
-						$("#entertown2").css('display', 'none');
-					}
-					
-					if (charx == t3x && chary == t3y) {
-						$("#entertown3").css('display', '');
-					}
-					else {
-						$("#entertown3").css('display', 'none');
-					}
-					
-					if(tleft == 1 && tbot == 2) {
-						addTask("dngn1");
-					}
-					else {
-						$("#dngn1").css('display', 'none');
-					}
-					if(ttop == 1 && tbot == 2) {
-						addTask("dngn2");
-					}
-					else {
-						$("#dngn2").css('display', 'none');
-					}
-					if (ttop == 3 && bot == 1 && right == 1) {
-						addTask("dngn3");
-					}
-					else {
-						$("#dngn3").css('display', 'none');
-					}
-					
-					/*if (tright == 2 && top == 1 && left == 1) {
-						addTask("shrine1");
-					}
-					else {
-						$("#shrine1").css('display', 'none');
-					}*/
-					if (charx == sh1x && chary == sh1y) {
-						$("#shrine1").css('display', '');
-					}
-					else {
-						$("#shrine1").css('display', 'none');
-					}/**/
-					
-					if (charx == sh2x && chary == sh2y) {
-						$("#shrine2").css('display', '');
-					}
-					else {
-						$("#shrine2").css('display', 'none');
-					}
-					if (charx == sh3x && chary == sh3y) {
-						$("#brkshn1").css('display', '');
-					}
-					else {
-						$("#brkshn1").css('display', 'none');
-					}
-					if (charx == sh4x && chary == sh4y) {
-						$("#brkshn2").css('display', '');
-					}
-					else {
-						$("#brkshn2").css('display', 'none');
-					}
-					if (charx == sh5x && chary == sh5y) {
-						$("#brkshn3").css('display', '');
-					}
-					else {
-						$("#brkshn3").css('display', 'none');
-					}
-					if (charx == sh6x && chary == sh6y) {
-						$("#brkshn4").css('display', '');
-					}
-					else {
-						$("#brkshn4").css('display', 'none');
-					}
-
-				}
-			});
-		}
-	}
+	}*/
 
 </script>

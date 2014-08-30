@@ -17,6 +17,13 @@
                     return strip_tags($_POST[$id]);
                 }
                 break;
+            case "REQUEST":
+                if(!isset($_REQUEST[$id]) || empty($_REQUEST[$id])) {
+                    return false;
+                } else {
+                    return strip_tags($_REQUEST[$id]);
+                }
+                break;
         }
     }
     
