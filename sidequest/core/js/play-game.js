@@ -54,10 +54,6 @@ var PlayGame = {
             dataType: "json",
             data: ajaxData,
             success: function(data) {
-                console.log(data);
-                console.log(SIDEQUEST.initPos);
-                console.log(SIDEQUEST.screenSize);
-                console.log(SIDEQUEST.initPos[0] * SIDEQUEST.screenSize[0], SIDEQUEST.initPos[1] * SIDEQUEST.screenSize[1]);
                 var id = data.id;
 
                 /*var xypos = ("#coord");
